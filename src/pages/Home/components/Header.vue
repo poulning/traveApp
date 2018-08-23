@@ -5,18 +5,24 @@
       <span class="iconfont">&#xe632;</span>
       请选择城市/景点/游戏主题
     </div>
-    <div class="header-right">城市<span class="iconfont">&#xe6a4;</span></div>
+    <router-link class="header-right" to="/city">
+      {{city}}<span class="iconfont">&#xe6a4;</span>
+    </router-link>
   </div>
 </template>
 <script>
-export default{}
+export default{
+  props: {
+    city: String
+  }
+}
 </script>
 <style lang="stylus" scoped>
-@import '~@/assets/styles/stylus/variables.styl'
+@import '~styles/stylus/variables.styl'
 .header
   display: flex
-  height: .86rem
-  line-height: .86rem
+  height: $headerheight
+  line-height: $headerheight
   background: $bgcolor
   color: #fff
   .header-left
@@ -36,4 +42,5 @@ export default{}
     float: right
     width: 1.24rem
     text-align: center
+    color: #fff
 </style>

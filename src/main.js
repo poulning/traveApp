@@ -3,10 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-//import fasctclick from 'fastclick'
-import '@/assets/styles/reset.css'
-import '@/assets/styles/border.css'
-import '@/assets/styles/iconfont/iconfont.css'
+// import fasctclick from 'fastclick'
+import VueAweSomeSwiper from 'vue-awesome-swiper'
+import 'styles/reset.css'
+import 'styles/border.css'
+import 'styles/iconfont/iconfont.css'
+import 'swiper/dist/css/swiper.css'
+
+Vue.use(VueAweSomeSwiper)
 
 Vue.config.productionTip = false
 
